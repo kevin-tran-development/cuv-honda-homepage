@@ -3,94 +3,668 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.css" />
+    <title>CUV Honda Homepage</title>
+    <meta name="description" content="CUV Honda Homepage" />
   </head>
   <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
+    <main>
+      <!-- Hero Section -->
+      <section
+        class="hero-with-nav hero-no-nav d-flex align-items-center text-center text-white"
+        style="
+          background-image: linear-gradient(
+              rgba(0, 0, 0, 0.5),
+              rgba(0, 0, 0, 0.5)
+            ),
+            url('./imgs/cuv-honda-banner-no-icon.jpg');
+          background-size: cover;
+          background-position: 70% 50%;
+          min-height: 50vh;
+        "
       >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
+        <div class="hero-with-nav__content w-100">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-11 col-sm-10 col-md-8 col-lg-8">
+                <div class="hero-content-container">
+                  <div class="col-6 col-md-6 col-lg-4 col-xl-3 mx-auto">
+                    <img
+                      src="./imgs/logo_honda_certified-1.png"
+                      alt="Logo Honda Certified"
+                      class="img-fluid mb-4"
+                    />
+                  </div>
+                  <h1 class="fw-bold mb-4 fs-1">
+                    Benefits of Buying a Certified Used Honda
+                  </h1>
+                  <a
+                    href="/en/find-your-honda/"
+                    class="btn btn-primary btn-lg fs-5"
+                  >
+                    Shop Certified Vehicles
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- What is a Honda Certified Used Vehicle Section -->
+      <section class="section-row py-5 section-show bg-white">
+        <div class="container">
+          <!-- Section Title -->
+          <div class="row mb-4 text-center">
+            <div class="col">
+              <h2 class="fw-bold fs-2">
+                What is a Honda Certified Used Vehicle?
+              </h2>
+            </div>
+          </div>
+
+          <!-- Video + Benefits Row -->
+          <div class="row justify-content-center align-items-center">
+            <!-- Video Column -->
+            <div class="col-12 col-lg-6 video-column mb-4">
+              <div class="ratio ratio-16x9">
+                <iframe
+                  src="https://www.youtube.com/embed/5oGLJNOhu3U?enablejsapi=1&amp;rel=0"
+                  title="Honda Certified Used Vehicles"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <!-- Benefits Column -->
+            <div class="col-12 col-lg-6">
+              <div class="benefits-of-buying p-4 ms-md-4">
+                <!-- Benefits List -->
+                <ul class="list-unstyled d-flex flex-column">
+                  <li class="align-items-center mb-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      style="color: #0d9be4; font-size: 1.5em"
+                      fill="currentColor"
+                      class="bi bi-gear-fill me-2"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"
+                      />
+                    </svg>
+                    <a
+                      href="#powertrain"
+                      class="text-decoration-underline text-dark"
+                    >
+                      Power Train Warranty
+                    </a>
+                  </li>
+                  <li class="align-items-center mb-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      style="color: #0d9be4; font-size: 1.5em"
+                      fill="currentColor"
+                      class="bi bi-search me-2"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                      />
+                    </svg>
+                    <a
+                      href="#inspection"
+                      class="text-decoration-underline text-dark"
+                    >
+                      100 Point Inspection
+                    </a>
+                  </li>
+                  <li class="align-items-center mb-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      style="color: #0d9be4; font-size: 1.5em"
+                      fill="currentColor"
+                      class="bi bi-card-checklist me-2"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"
+                      />
+                      <path
+                        d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0M7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0"
+                      />
+                    </svg>
+                    <a
+                      href="#history"
+                      class="text-decoration-underline text-dark"
+                    >
+                      Vehicle History Report
+                    </a>
+                  </li>
+                  <li class="align-items-center mb-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      style="color: #0d9be4; font-size: 1.5em"
+                      fill="currentColor"
+                      class="bi bi-arrow-left-right me-2"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"
+                      />
+                    </svg>
+                    <a
+                      href="#exchange"
+                      class="text-decoration-underline text-dark"
+                    >
+                      Exchange Privilege
+                    </a>
+                  </li>
+                  <li class="align-items-center mb-4">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      style="color: #0d9be4; font-size: 1.5em"
+                      fill="currentColor"
+                      class="bi bi-box-arrow-in-left me-2"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0z"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708z"
+                      />
+                    </svg>
+                    <a
+                      href="https://www.honda.ca/login"
+                      target="_blank"
+                      rel="noopener"
+                      class="text-decoration-underline text-dark"
+                    >
+                      Access to MyHonda
+                    </a>
+                  </li>
+                </ul>
+
+                <!-- CTA Button -->
+                <a
+                  href="/en/finance-offers/"
+                  class="btn btn-primary btn-lg fs-5"
+                >
+                  Financing Rates
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose a Certified Pre-Owned Honda -->
+      <section class="section-row py-5 text-center section-show bg-white">
+        <div class="container">
+          <!-- Section Header -->
+          <div class="row mb-5">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="fw-bold fs-2 mb-3">
+                Why Choose a Certified Pre-Owned Honda?
+              </h2>
+              <p class="lead">
+                Honda Certified Used Vehicles are highly sought after thanks to
+                Honda's legendary reputation for durability, quality, and
+                reliability.
+              </p>
+            </div>
+          </div>
+
+          <!-- Reasons Grid -->
+          <div class="row g-4">
+            <div class="col-12 col-lg-4">
+              <div class="cuv-reason-container h-100 shadow rounded-3 p-4">
+                <h3 class="fw-semibold">Reason 1</h3>
+                <div
+                  class="mx-auto my-3"
+                  style="border-bottom: 2px solid #e3173e; width: 50%"
+                ></div>
+                <p class="mt-3">
+                  In order to earn the distinction of Honda Certified, each used
+                  Honda vehicle must pass a series of strict Honda Canada
+                  mandated mechanical and appearance inspections.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="cuv-reason-container h-100 shadow rounded-3 p-4">
+                <h3 class="fw-semibold">Reason 2</h3>
+                <div
+                  class="mx-auto my-3"
+                  style="border-bottom: 2px solid #e3173e; width: 50%"
+                ></div>
+                <p class="mt-3">
+                  Only vehicles that meet these rigorous standards are eligible
+                  for admission into the Honda Certified Used Vehicle program.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="cuv-reason-container h-100 shadow rounded-3 p-4">
+                <h3 class="fw-semibold">Reason 3</h3>
+                <div
+                  class="mx-auto my-3"
+                  style="border-bottom: 2px solid #e3173e; width: 50%"
+                ></div>
+                <p class="mt-3">
+                  Honda Certified Used Vehicles are offered special discounted
+                  finance rates from Honda Financial Services.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Look for the Honda Certified Used Vehicle Logo -->
+      <section
+        class="section-row py-5 mt-4 section-show text-center text-white"
+        style="background-color: #007dba"
+      >
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <!-- Text Column -->
+            <div class="col-12 col-md-8 mb-4 mb-md-0">
+              <h2 class="fw-semibold fs-2 mb-0" style="font-size: 1.5rem">
+                Look for the Honda Certified Used Vehicle Logo
+              </h2>
+            </div>
+
+            <!-- Logo Column -->
+            <div class="col-8 col-md-4">
+              <img
+                src="./imgs/logo_honda_certified-1.png"
+                alt="Logo Honda Certified"
+                class="oem-logo img-fluid mx-auto d-block"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Buy Section -->
+      <section
+        class="section-row py-5 section-show why-buy-section bg-light d-none d-lg-block"
+      >
+        <div class="container">
+          <!-- Vehicle History Report -->
+          <div id="history" class="row align-items-stretch mb-5">
+            <div class="col-lg-6 mb-4 mb-lg-0 d-flex">
+              <img
+                src="./imgs/panel-1.jpg"
+                srcset="
+                  ./imgs/panel-1-400.jpg  400w,
+                  ./imgs/panel-1-800.jpg  800w,
+                  ./imgs/panel-1.jpg     1200w
+                "
+                sizes="(max-width: 576px) 100vw, (max-width: 992px) 90vw, 80vw"
+                class="img-fluid rounded-3 shadow-sm mx-auto d-block w-100 object-fit-cover"
+                alt="Vehicle History Report"
+              />
+            </div>
+            <div class="col-lg-6 d-flex">
+              <div class="bg-white p-4 rounded-3 shadow-sm w-100">
+                <h3>Vehicle History Report</h3>
+                <p>
+                  CARFAX is Canada's definitive source of automotive
+                  information, delivering vehicle history information, and is
+                  trusted to provide impartial and comprehensive information to
+                  dealerships, vehicle manufacturers, consumers, major auctions,
+                  governments, insurance providers, and police agencies.
+                </p>
+                <a
+                  href="https://www.carfax.ca/"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-outline-secondary mt-3"
+                >
+                  Visit CARFAX Canada
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Exchange Privilege -->
+          <div
+            id="exchange"
+            class="row align-items-stretch flex-lg-row-reverse mb-5"
+          >
+            <div class="col-lg-6 mb-4 mb-lg-0 d-flex">
+              <img
+                src="./imgs/panel-2.jpg"
+                srcset="
+                  ./imgs/panel-2-400.jpg  400w,
+                  ./imgs/panel-2-800.jpg  800w,
+                  ./imgs/panel-2.jpg     1200w
+                "
+                sizes="(max-width: 576px) 100vw, (max-width: 992px) 90vw, 80vw"
+                class="img-fluid rounded-3 shadow-sm mx-auto d-block w-100 object-fit-cover"
+                alt="Exchange Privilege"
+              />
+            </div>
+            <div class="col-lg-6 d-flex">
+              <div class="bg-white p-4 rounded-3 shadow-sm w-100">
+                <h3>Exchange Privilege</h3>
+                <p>
+                  Every Honda Certified Used Vehicle offers a no-hassle 7 day /
+                  1,000 km exchange privilege.*
+                </p>
+                <p>
+                  Although we're confident that you will not need to take
+                  advantage of this benefit, we offer this to give you peace of
+                  mind — if for any reason you are unhappy with your certified
+                  vehicle, you may exchange it for another Honda CUV model at
+                  the dealership.
+                </p>
+                <a href="/" class="btn btn-outline-secondary mt-3"
+                  >View Disclaimer</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 100 Point Inspection -->
+          <div id="inspection" class="row align-items-stretch mb-5">
+            <div class="col-lg-6 mb-4 mb-lg-0 d-flex">
+              <img
+                src="./imgs/panel-3.jpg"
+                srcset="
+                  ./imgs/panel-3-400.jpg  400w,
+                  ./imgs/panel-3-800.jpg  800w,
+                  ./imgs/panel-3.jpg     1200w
+                "
+                sizes="(max-width: 576px) 100vw, (max-width: 992px) 90vw, 80vw"
+                class="img-fluid rounded-3 shadow-sm mx-auto d-block w-100 object-fit-cover"
+                alt="100 Point Inspection"
+              />
+            </div>
+            <div class="col-lg-6 d-flex">
+              <div class="bg-white p-4 rounded-3 shadow-sm w-100">
+                <h3>100 Point Inspection</h3>
+                <p>
+                  All Honda Certified Used Vehicles must undergo a thorough
+                  Honda Canada mandated 100-point mechanical and appearance
+                  inspection by Honda factory-trained technicians.
+                </p>
+                <p>
+                  This bumper-to-bumper inspection helps identify and correct
+                  any issues, using only Honda Genuine parts to ensure top
+                  quality.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Power Train Warranty -->
+          <div
+            id="powertrain"
+            class="row align-items-stretch flex-lg-row-reverse"
+          >
+            <div class="col-lg-6 mb-4 mb-lg-0 d-flex">
+              <img
+                src="./imgs/panel-4.jpg"
+                srcset="
+                  ./imgs/panel-4-400.jpg  400w,
+                  ./imgs/panel-4-800.jpg  800w,
+                  ./imgs/panel-4.jpg     1200w
+                "
+                sizes="(max-width: 576px) 100vw, (max-width: 992px) 90vw, 80vw"
+                class="img-fluid rounded-3 shadow-sm mx-auto d-block w-100 object-fit-cover"
+                alt="Power Train Warranty"
+              />
+            </div>
+            <div class="col-lg-6 d-flex">
+              <div class="bg-white p-4 rounded-3 shadow-sm w-100">
+                <h3>Power Train Warranty</h3>
+                <p>
+                  For additional peace of mind, Honda Certified Used Vehicles
+                  come with a Honda Canada backed 7 year / 160,000 km Power
+                  Train Warranty — an additional 2 year / 60,000 km beyond the
+                  original factory Power Train warranty.
+                </p>
+                <p>
+                  Honda Certified Used Vehicles also have the option to upgrade
+                  to a Honda Plus Extended Warranty.
+                </p>
+                <a
+                  href="https://www.honda.ca/owners/warranty/honda-plus?_ga=2.106517123.1613847319.1619796407-1747577586.1609861804"
+                  class="btn btn-outline-secondary mt-3"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Find Out More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mobile Carousel Section -->
+      <section class="py-5 bg-white d-block d-lg-none">
+        <div class="container text-center">
+          <h2 class="fw-bold fs-2 mb-4">
+            Scroll to the side to learn about the Benefits of Honda Certified
+          </h2>
+
+          <div class="mobile-scroll-wrapper" id="benefitsSwipe">
+            <!-- Slide 1 -->
+            <div class="mobile-scroll-item card border-0 shadow-sm p-3 me-3">
+              <img
+                src="./imgs/panel-1.jpg"
+                class="img-fluid rounded mb-3"
+                alt="Vehicle History Report"
+              />
+              <h2 class="h4 fw-bold py-2 pb-4">Vehicle History Report</h2>
+              <p>
+                CARFAX is Canada's definitive source of automotive information,
+                delivering vehicle history information, and is trusted to
+                provide impartial and comprehensive information to dealerships,
+                vehicle manufacturers, consumers, major auctions, governments,
+                insurance providers, and police agencies.
+              </p>
+              <a
+                href="https://www.carfax.ca/"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-outline-primary fs-5 mt-2"
+              >
+                Visit CARFAX Canada
+              </a>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="mobile-scroll-item card border-0 shadow-sm p-3 me-3">
+              <img
+                src="./imgs/panel-2.jpg"
+                class="img-fluid rounded mb-3"
+                alt="Exchange Privilege"
+              />
+              <h2 class="h4 fw-bold py-2 pb-4">Exchange Privilege</h2>
+              <p>
+                Every Honda Certified Used Vehicle offers a no-hassle 7 day /
+                1,000 km exchange privilege.*
+              </p>
+              <p>
+                Although we're confident that you will not need to take
+                advantage of this benefit, we offer this to give you peace of
+                mind — if for any reason you are unhappy with your certified
+                vehicle, you may exchange it for another Honda CUV model at the
+                dealership.
+              </p>
+              <a href="/" class="btn btn-outline-primary fs-5 mt-2"
+                >View Disclaimer</a
+              >
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="mobile-scroll-item card border-0 shadow-sm p-3 me-3">
+              <img
+                src="./imgs/panel-3.jpg"
+                class="img-fluid rounded mb-3"
+                alt="100 Point Inspection"
+              />
+              <h2 class="h4 fw-bold py-2 pb-4">100-Point Inspection</h2>
+              <p>
+                All Honda Certified Used Vehicles must undergo a thorough Honda
+                Canada mandated 100-point mechanical and appearance inspection
+                by Honda factory-trained technicians.
+              </p>
+              <p>
+                This bumper-to-bumper inspection helps identify and correct any
+                issues, using only Honda Genuine parts to ensure top quality.
+              </p>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="mobile-scroll-item card border-0 shadow-sm p-3 me-3">
+              <img
+                src="./imgs/panel-4.jpg"
+                class="img-fluid rounded mb-3"
+                alt="Power Train Warranty"
+              />
+              <h2 class="h4 fw-bold py-2 pb-4">Power Train Warranty</h2>
+              <p>
+                For additional peace of mind, Honda Certified Used Vehicles come
+                with a Honda Canada backed 7 year / 160,000 km Power Train
+                Warranty — an additional 2 year / 60,000 km beyond the original
+                factory Power Train warranty.
+              </p>
+              <p>
+                Honda Certified Used Vehicles also have the option to upgrade to
+                a Honda Plus Extended Warranty.
+              </p>
+              <a
+                href="https://www.honda.ca/owners/warranty/honda-plus"
+                target="_blank"
+                class="btn btn-outline-primary mt-2"
+              >
+                Find Out More
+              </a>
+              <small class="text-muted d-block mt-2" style="font-size: 0.8rem">
+                *Whichever comes first from original in-service date.
+              </small>
+            </div>
+          </div>
+
+          <!-- Scroll indicators -->
+          <div
+            class="scroll-indicators mt-3 d-flex justify-content-center gap-2"
+          >
+            <div class="pagination-dot active"></div>
+            <div class="pagination-dot"></div>
+            <div class="pagination-dot"></div>
+            <div class="pagination-dot"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5" style="background-color: #007dba">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <h2 class="pb-4 fs-2 text-white">
+                Check out the videos below to learn more about the Benefits of
+                Honda Certified
+              </h2>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-12 col-md-6">
+              <div class="ratio ratio-16x9">
+                <iframe
+                  src="https://www.youtube.com/embed/tw5H1rmri6I?rel=0"
+                  title="Honda Certified Benefits Video 1"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div class="ratio ratio-16x9">
+                <iframe
+                  src="https://www.youtube.com/embed/Rtv68VRMXEQ?rel=0"
+                  title="Honda Certified Benefits Video 2"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <p class="small text-muted mb-3">
+                *Limited time financing offer provided through Honda Financial
+                Services (HFS) to qualified retail customers on approved credit,
+                for a 24 to 72 month term on 2016 - 2020 Honda Certified
+                Pre-Owned models. To qualify, an eligible model must have a
+                total financed amount of at least $7,500. Representative finance
+                example based on a certified used 2018 Civic with an average
+                financed amount of $15,000, with a $0 down payment, financed at
+                4.49% APR equals $283.00 monthly for 60 months. Cost of
+                borrowing is $1,980 for a total obligation of $16,980.
+                Applicable fees, levies and duties (all of which may vary by
+                region and dealer) are (i) included in BC, AB, SK, MB, ON and
+                QC, and (ii) extra in PEI, NS, NFLD, NB, YK, NV and NWT. Taxes,
+                licence, insurance, registration [including, where applicable,
+                lien registration fee (up to $84.53) and lien registering agent
+                fee (up to $6.50)] and duty on new tires (QC only) are extra.
+                Dealer may sell for less. Dealer trade may be necessary (but may
+                not be available in all cases). Quantity and eligible models
+                will vary by dealer, while supplies last; certain dealers may
+                not have any eligible models. Offer may not be combined with
+                certain other offers. Offer/rates subject to change/cancellation
+                without notice. Models shown for illustration purposes only.
+              </p>
+
+              <p class="small text-muted mb-0">
+                © 2021 Honda, a division of Honda Canada Inc.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+    <script>
+      // JS for mobile carousel pagination
+      const container = document.getElementById("benefitsSwipe");
+      const dots = document.querySelectorAll(".pagination-dot");
+      const cardWidth = container.querySelector(
+        ".mobile-scroll-item"
+      ).offsetWidth;
+
+      container.addEventListener("scroll", () => {
+        const index = Math.round(container.scrollLeft / cardWidth);
+        dots.forEach((dot, i) => {
+          dot.classList.toggle("active", i === index);
+        });
+      });
+    </script>
   </body>
 </html>

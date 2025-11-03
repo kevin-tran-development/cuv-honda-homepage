@@ -1,0 +1,192 @@
+.benefits-of-buying {
+  text-align: center;
+  padding-left: 1rem;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+  height: 100%;
+}
+
+@media (min-width: 992px) {
+  .benefits-of-buying {
+    text-align: left;
+  }
+}
+
+/* Hero */
+@media (min-width: 1024px) {
+  .hero-content-container {
+    margin: 6em 0 4em 0 !important;
+  }
+
+  body:not(.acura) .site-navigation {
+    top: 2.6rem !important;
+  }
+}
+
+.hero-content-container {
+  margin: 3em 0 3em 0;
+}
+
+.hero-content-container h1 {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.hero-with-nav {
+  background-image: url(./imgs/cuv-honda-banner-no-icon.jpg) !important;
+}
+
+.hero-no-nav {
+  background-size: cover;
+  background-position: 70% 50%;
+  align-content: center;
+  text-align: center;
+}
+.hero-with-nav__content * {
+  color: #fff;
+}
+.hero-with-nav__content h1 {
+  margin-bottom: 1rem;
+  font-size: 2.8rem;
+}
+/* End of Hero */
+
+.site-footer {
+  display: none;
+}
+
+.oem-logo {
+  width: 50% !important;
+}
+
+@media (min-width: 768px) {
+  .oem-logo {
+    width: 60% !important;
+  }
+}
+
+.benefits {
+  margin-bottom: 0;
+  padding-top: 0 !important;
+}
+
+.benefits ul {
+  max-width: none;
+}
+
+.benefits ul a {
+  color: #000;
+}
+
+.benefits ul li:before {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .benefits ul li {
+    max-width: 100% !important;
+    flex: 100% !important;
+    padding: 0 !important;
+  }
+}
+
+.video-column {
+  margin-top: 2.5em !important;
+}
+.cuv-reason-container {
+  background-color: #fff;
+  padding: 1.5em;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cuv-reason-container:hover {
+  transform: scale(1.1);
+}
+
+.card .card-header {
+  width: 350px;
+}
+
+#offer-disclaimer .card {
+  background-color: #f1f1f1;
+}
+
+.mb-0 a {
+  font-family: AvenirNextLTPro-Regular, Helvetica Neue, Arial, sans-serif !important;
+}
+
+.disclaimer-copy p {
+  color: #fff !important;
+}
+
+p {
+  margin-bottom: 0;
+}
+.btn-arrow {
+  color: #000;
+}
+
+/* adjusting the certified used vehicle button below main nav */
+@media (max-width: 991px) and (min-width: 768px) {
+  .btn-trigger-primary-menu {
+    margin-top: 46px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .video-section div {
+    padding-bottom: 56.25%;
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits {
+    padding-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+/* Mobile Carousel Section */
+.mobile-scroll-wrapper {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  gap: 1rem;
+  padding-bottom: 10px;
+}
+
+.mobile-scroll-wrapper::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+.mobile-scroll-item {
+  flex: 0 0 85%;
+  scroll-snap-align: start;
+}
+
+/* Pagination dot styles */
+.pagination-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ddd;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.pagination-dot.active {
+  background: #0d6efd; /* Bootstrap primary */
+  transform: scale(1.2);
+}
+/* End of Pagination dot styles */
+/* End of mobile carousel section */
+
+button:focus {
+  outline: none;
+}
+section.section-row.no-padding-x.py-5.section-show {
+  overflow-x: hidden;
+}
