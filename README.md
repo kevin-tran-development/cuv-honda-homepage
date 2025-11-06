@@ -10,5 +10,6 @@ This project was a concept redesign for Honda Canada's Certified Used Vehicles h
 - Honda's color palette and visual style are consistently applied throughout the design
 
 # Screenshots 
-![Honda Canada CUV Homepage concept redesign](https://github.com/kevin-tran-development/cuv-honda-homepage/blob/main/docs/screenshots/honda-cuv-homepage-carousel.jpg "CUV Homepage Carousel")
-<img src="https://github.com/kevin-tran-development/cuv-honda-homepage/blob/main/docs/screenshots/honda-cuv-homepage-carousel.jpg" width="1024">
+<img src="https://github.com/kevin-tran-development/cuv-honda-homepage/blob/main/docs/screenshots/honda-cuv-homepage-carousel.jpg" width="768">
+<img src="https://github.com/kevin-tran-development/cuv-honda-homepage/blob/main/docs/screenshots/honda-cuv-homepage-features.jpg" width="768">
+<img src="https://github.com/kevin-tran-development/cuv-honda-homepage/blob/main/docs/screenshots/honda-cuv-homepage.jpg" width="768">
